@@ -1,11 +1,13 @@
 import React from "react";
-import "./App.scss";
+import { Route, Link } from "react-router-dom";
+
 import { HomePage } from "./pages/homepage/homepage.component";
+import "./App.scss";
 
 function App() {
 	return (
 		<div>
-			<HomePage />
+			<Route exact path="/" component={HomePage} />
 		</div>
 	);
 }
